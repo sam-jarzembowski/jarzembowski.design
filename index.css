@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/wfo3qdw.css");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    /* font */
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: #FFF6EB;
+    max-width: 1196px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "headr"
+    "navbar"
+    "mainy"
+    "footr";
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.navbar {
+    font-size: 1em;
+
+    padding-top: 2em;
+    margin-bottom: 2em;
+
+    grid-area: headr;
+}
+
+.statement {
+    font-family: "roca", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.2em;
+}
+
+footer {
+    font-weight: 300;
+    padding-top: 3em;
+    padding-bottom: 1em;
+
+    grid-area: footr;
+}
